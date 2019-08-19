@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="api.css" type="text/css" rel="stylesheet" title="APIリファレンス用標準スタイル" />
+<title>Window - / Windowクラスの拡張</title>
+</head>
+<body>
+<h1><a name="top" id="top">Window</a></h1>
+<div class="para"></div>
+<h1>メンバ</h1><div class="para">
+<dl>
+<dt>メソッド</dt>
+<dd>
+<a class="jump" href="func_Window_bringTo.html">bringTo</a> (ウィンドウの Zオーダーを変更する )<br />
+<a class="jump" href="func_Window_cancelCheckSignature.html">cancelCheckSignature</a> (署名チェックのキャンセル )<br />
+<a class="jump" href="func_Window_cancelSaveLayerImage.html">cancelSaveLayerImage</a> (画像保存キャンセル )<br />
+<a class="jump" href="func_Window_checkSignature.html">checkSignature</a> (署名チェックの開始 )<br />
+<a class="jump" href="func_Window_commandExecute.html">commandExecute</a> (コンソール出力取得つきコマンドラインプログラムの実行 )<br />
+<a class="jump" href="func_Window_commandSendSignal.html">commandSendSignal</a> (Ctrl+Cイベントの送信(experimental:すべての環境で動作するとは限りません) )<br />
+<a class="jump" href="func_Window_doProgress.html">doProgress</a> (プログレス処理の経過状態を通知する。 )<br />
+<a class="jump" href="func_Window_endProgress.html">endProgress</a> (プログレス処理を終了する。 )<br />
+<a class="jump" href="func_Window_focusMenuByKey.html">focusMenuByKey</a> (SC_KEYMENUを送る )<br />
+<a class="jump" href="func_Window_forceResizeRect.html">forceResizeRect</a> (（※これはプラグインで拡張される関数ではありません！） onResizingでサイズを固定させるサンプル )<br />
+<a class="jump" href="func_Window_getClientRect.html">getClientRect</a> (クライアント・ウィンドウ領域，非最大化通常表示の領域の取得 )<br />
+<a class="jump" href="func_Window_getNormalRect.html">getNormalRect</a> (非最大化通常表示領域(@param nofix true:ワークエリア補正を行わない) )<br />
+<a class="jump" href="func_Window_getNotificationName.html">getNotificationName</a> (イベント番号からWM_XXXを取得（WM_を除いて返る） )<br />
+<a class="jump" href="func_Window_getNotificationNum.html">getNotificationNum</a> (WM_XXXイベント番号を取得（WM_は除いて渡す） )<br />
+<a class="jump" href="func_Window_getWindowRect.html">getWindowRect</a> (ウィンドウ領域 )<br />
+<a class="jump" href="func_Window_maximize.html">maximize</a> (ウィンドウの最大化 )<br />
+<a class="jump" href="func_Window_minimize.html">minimize</a> (ウィンドウの最小化（mainWindowではタスクバー収納，それ以外は画面左下に最小化） )<br />
+<a class="jump" href="func_Window_ncHitTest.html">ncHitTest</a> (非クライアントエリア調査 )<br />
+<a class="jump" href="func_Window_onAccelKeyMenu.html">onAccelKeyMenu</a> (WM_MENUCHAR通知コールバック )<br />
+<a class="jump" href="func_Window_onActivateChanged.html">onActivateChanged</a> (■拡張イベント：アクティブ状態変更通知 )<br />
+<a class="jump" href="func_Window_onCheckSignatureDone.html">onCheckSignatureDone</a> (イベント:署名チェック終了 )<br />
+<a class="jump" href="func_Window_onCheckSignatureProgress.html">onCheckSignatureProgress</a> (イベント:署名チェック進捗 )<br />
+<a class="jump" href="func_Window_onCommandLineOutput.html">onCommandLineOutput</a> (イベント:コンソール出力 )<br />
+<a class="jump" href="func_Window_onDisplayChanged.html">onDisplayChanged</a> (■拡張イベント：ディスプレイ構成の変更通知 )<br />
+<a class="jump" href="func_Window_onDrawClipboard.html">onDrawClipboard</a> (クリップボードが更新された時に呼び出されるフック関数 )<br />
+<a class="jump" href="func_Window_onEnterMenuLoop.html">onEnterMenuLoop</a> (■拡張イベント：メニュー処理の開始・終了通知 )<br />
+<a class="jump" href="func_Window_onExitMenuLoop.html">onExitMenuLoop</a> (< メニュー処理開始 )<br />
+<a class="jump" href="func_Window_onHide.html">onHide</a> (■拡張イベント：ウィンドウ非表示 )<br />
+<a class="jump" href="func_Window_onMaximize.html">onMaximize</a> (■拡張イベント：ウィンドウ最大化 )<br />
+<a class="jump" href="func_Window_onMaximizeQuery.html">onMaximizeQuery</a> (■拡張イベント：最大化を許可するかどうか確認 )<br />
+<a class="jump" href="func_Window_onMessageReceived.html">onMessageReceived</a> (イベント：メッセージ受信。 )<br />
+<a class="jump" href="func_Window_onMinimize.html">onMinimize</a> (■拡張イベント：ウィンドウ最小化 )<br />
+<a class="jump" href="func_Window_onMonitorPower.html">onMonitorPower</a> ( )<br />
+<a class="jump" href="func_Window_onMove.html">onMove</a> (■拡張イベント：ウィンドウ移動（完了） )<br />
+<a class="jump" href="func_Window_onMoveSizeBegin.html">onMoveSizeBegin</a> (■拡張イベント：リサイズ・移動開始通知/終了 )<br />
+<a class="jump" href="func_Window_onMoveSizeEnd.html">onMoveSizeEnd</a> (終了通知 )<br />
+<a class="jump" href="func_Window_onMoving.html">onMoving</a> (■拡張イベント：ウィンドウ移動中 )<br />
+<a class="jump" href="func_Window_onNcMouseDown.html">onNcMouseDown</a> ( )<br />
+<a class="jump" href="func_Window_onNcMouseLeave.html">onNcMouseLeave</a> ( )<br />
+<a class="jump" href="func_Window_onNcMouseMove.html">onNcMouseMove</a> (■拡張イベント：非クライアントエリアマウスイベント )<br />
+<a class="jump" href="func_Window_onNcMouseUp.html">onNcMouseUp</a> (< registerExEvent()後の追加は無効（詳細はregisterExEventの説明を参照） )<br />
+<a class="jump" href="func_Window_onNonCapMouseEvent.html">onNonCapMouseEvent</a> (WM_SETCURSORコールバック：ht=LOWORD(LParam), ev=HIWORD(LParam) )<br />
+<a class="jump" href="func_Window_onResizing.html">onResizing</a> (■拡張イベント：サイズ変更中 )<br />
+<a class="jump" href="func_Window_onSaveLayerImageDone.html">onSaveLayerImageDone</a> (保存処理実行完了イベント )<br />
+<a class="jump" href="func_Window_onSaveLayerImageProgress.html">onSaveLayerImageProgress</a> (保存処理実行中イベント )<br />
+<a class="jump" href="func_Window_onScreenSave.html">onScreenSave</a> (■拡張イベント：スクリーンセーバー開始通知，モニタパワー変更通知 )<br />
+<a class="jump" href="func_Window_onShellExecuted.html">onShellExecuted</a> (イベント:シェル実行終了 )<br />
+<a class="jump" href="func_Window_onShow.html">onShow</a> (■拡張イベント：ウィンドウ表示 )<br />
+<a class="jump" href="func_Window_onStartKeyMenu.html">onStartKeyMenu</a> (SC_KEYMENU通知コールバック )<br />
+<a class="jump" href="func_Window_onWindowsMessageHook.html">onWindowsMessageHook</a> (setMessageHookで指定したイベント発生時のコールバック )<br />
+<a class="jump" href="func_Window_registerExEvent.html">registerExEvent</a> (拡張イベントを有効にする )<br />
+<a class="jump" href="func_Window_registerUserMessageReceiver.html">registerUserMessageReceiver</a> (ユーザ定義のメッセージハンドラを登録します。 )<br />
+<a class="jump" href="func_Window_resetWindowIcon.html">resetWindowIcon</a> (ウィンドウのタイトルバーアイコンを再設定する )<br />
+<a class="jump" href="func_Window_sendMessage.html">sendMessage</a> (メッセージの送信を行います。 )<br />
+<a class="jump" href="func_Window_sendToBack.html">sendToBack</a> (/ alias method )<br />
+<a class="jump" href="func_Window_sendUserMessage.html">sendUserMessage</a> (低レベルメッセージ送信を実行します。 )<br />
+<a class="jump" href="func_Window_setMessageHook.html">setMessageHook</a> (メッセージフックを設定(on:有効, ev:イベント番号またはイベント名文字：省略時全部） )<br />
+<a class="jump" href="func_Window_setOverlayBitmap.html">setOverlayBitmap</a> (オーバーレイビットマップを表示・消去する )<br />
+<a class="jump" href="func_Window_setProgressMessage.html">setProgressMessage</a> (プログレス処理のテキストを差し替える )<br />
+<a class="jump" href="func_Window_setWindowIcon.html">setWindowIcon</a> (ウィンドウのタイトルバーアイコンを変更する )<br />
+<a class="jump" href="func_Window_shellExecute.html">shellExecute</a> (バックグラウンドでの外部プログラムの実行 )<br />
+<a class="jump" href="func_Window_showRestore.html">showRestore</a> (ウィンドウ最大化・最小化の復帰 )<br />
+<a class="jump" href="func_Window_startProgress.html">startProgress</a> (プログレス処理を開始する。 吉里吉里が実行ブロック中でも正常に表示継続します。 )<br />
+<a class="jump" href="func_Window_startSaveLayerImage.html">startSaveLayerImage</a> (TLG5/PNG 形式での画像の保存の開始 )<br />
+<a class="jump" href="func_Window_stopCheckSignature.html">stopCheckSignature</a> (署名チェックの中止 )<br />
+<a class="jump" href="func_Window_stopSaveLayerImage.html">stopSaveLayerImage</a> (画像保存中止（中止した場合は終了イベントが来ません） )<br />
+<a class="jump" href="func_Window_terminateProcess.html">terminateProcess</a> (実行中の外部プログラムの強制終了 )<br />
+</dd>
+<dt>プロパティ</dt>
+<dd>
+<a class="jump" href="prop_Window_clipboardWatchEnabled.html">clipboardWatchEnabled</a> (クリップボード更新の監視をするかどうか設定する(デフォルトはオフ) )<br />
+<a class="jump" href="prop_Window_disableResize.html">disableResize</a> (リサイズの抑制 )<br />
+<a class="jump" href="prop_Window_enableNCMouseEvent.html">enableNCMouseEvent</a> (WM_SETCURSORのコールバックonNonCapMouseEventを有効にする（デフォルト：false） )<br />
+<a class="jump" href="prop_Window_exSystemMenu.html">exSystemMenu</a> (システムメニューに追加 )<br />
+<a class="jump" href="prop_Window_maximized.html">maximized</a> (ウィンドウが最大化かどうか取得 )<br />
+<a class="jump" href="prop_Window_messageEnable.html">messageEnable</a> (メッセージ受信機能が有効かどうかを指定します。 )<br />
+<a class="jump" href="prop_Window_minimized.html">minimized</a> (ウィンドウが最小化かどうか取得 )<br />
+<a class="jump" href="prop_Window_storeHWND.html">storeHWND</a> (HWND 情報を保存するかどうかを指定します。 )<br />
+</dd>
+<dt>定数</dt>
+<dd>
+nchtBorder (HTBORDER )<br />
+nchtBottom (HTBOTTOM )<br />
+nchtBottomLeft (HTBOTTOMLEFT )<br />
+nchtBottomRight (HTBOTTOMRIGHT )<br />
+nchtCaption (HTCAPTION )<br />
+nchtClient (HTCLIENT )<br />
+nchtError (HTERROR )<br />
+nchtGrowBox (HTGROWBOX )<br />
+nchtHScroll (HTHSCROLL )<br />
+nchtLeft (HTLEFT )<br />
+nchtMaxButton (HTMAXBUTTON )<br />
+nchtMenu (HTMENU )<br />
+nchtMinButton (HTMINBUTTON )<br />
+nchtNoWhere (HTNOWHERE )<br />
+nchtReduce (HTREDUCE )<br />
+nchtRight (HTRIGHT )<br />
+nchtSize (HTSIZE )<br />
+nchtSysMenu (HTSYSMENU )<br />
+nchtTop (HTTOP )<br />
+nchtTopLeft (HTTOPLEFT )<br />
+nchtTopRight (HTTOPRIGHT )<br />
+nchtTransparent (HTTRANSPARENT )<br />
+nchtVScroll (HTVSCROLL )<br />
+nchtZoom (HTZOOM )<br />
+PBS_SMOOTH (プログレスバースムーズ指定 )<br />
+PBS_VERTICAL (プログレスバー垂直配置指定 )<br />
+</dd>
+</dl>
+</div>
+</body>
+</html>
